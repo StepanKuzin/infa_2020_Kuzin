@@ -16,6 +16,12 @@ screen.fill(screen_color)
 
 
 def log(x, y, scale_fact):
+    """
+    draw log of tree
+    x - position in horizontal
+    y - position in vertical
+    scale_fact - scale of picture
+    """
     surface_log = pg.Surface((800, 600))
     surface_log.set_colorkey(white)
 
@@ -32,6 +38,12 @@ def log(x, y, scale_fact):
 
 
 def leaves(x, y, scale_fact):
+    """
+    draw leaves of tree
+    x - position in horizontal
+    y - position in vertical
+    scale_fact - scale of picture
+    """
     surface_leaves_r = pg.Surface((800, 600))
     surface_leaves_l = pg.Surface((800, 600))
 
@@ -67,6 +79,12 @@ def leaves(x, y, scale_fact):
 
 
 def panda(x, y, scale_fact):
+    """
+    draw panda of tree
+    x - position in horizontal
+    y - position in vertical
+    scale_fact - scale of picture
+    """
 
     circle(screen, white,
            (x + 24*scale_fact, y - 35*scale_fact), scale_fact * 18)
@@ -100,6 +118,12 @@ def panda(x, y, scale_fact):
 
 
 def palm(x, y, scale_fact):
+    """
+    draw tree
+    x - position in horizontal
+    y - position in vertical
+    scale_fact - scale of picture
+    """
     log(x, y, scale_fact)
 
     leaves(x, y, scale_fact)
